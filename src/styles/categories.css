@@ -1,0 +1,93 @@
+/* Styles communs pour toutes les pages de catégories */
+
+.categories-container {
+    padding: 20px;
+    background-color: #f4f4f4;
+    /* Couleur de fond commune */
+    color: #333;
+    /* Couleur du texte */
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* Grille responsive */
+    gap: 20px;
+}
+
+.car-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+}
+
+.car-card img {
+    width: 100%;
+    height: auto;
+}
+
+.car-price {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.details-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.details-link:hover {
+    text-decoration: underline;
+}
+
+
+/* Styles spécifiques aux titres de catégories */
+
+.category-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.category-description {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+/* styles/categories.css */
+
+.navbar {
+    background-color: #333;
+    padding: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+.nav-links a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}

@@ -1,235 +1,249 @@
- /* Styles pour la barre de navigation */
- 
- .navbar {
-     background-color: #1b1b2f;
-     padding: 15px;
- }
- 
- .navbar ul {
-     display: flex;
-     list-style-type: none;
-     justify-content: space-around;
-     margin: 0;
-     padding: 0;
- }
- 
- .navbar li {
-     font-size: 1.2em;
- }
- 
- .navbar a {
-     color: #ffffff;
-     text-decoration: none;
- }
- 
- .navbar a:hover {
-     color: #f9a826;
- }
- /* Section d'introduction */
- 
- .home {
-     padding: 40px;
-     text-align: center;
-     background-color: #f3f3f3;
- }
- 
- .home h1 {
-     color: #1b1b2f;
-     font-size: 2.5em;
-     margin-bottom: 10px;
- }
- 
- .home h2 {
-     color: #333;
-     font-size: 1.8em;
-     margin-top: 10px;
- }
- 
- .home p {
-     font-size: 1.2em;
-     color: #666;
-     line-height: 1.6em;
- }
- /* Section des modèles de voitures */
- 
- .car-showcase {
-     padding: 40px;
-     background-color: #ffffff;
-     text-align: center;
-     position: relative;
- }
- 
- .car-showcase h2 {
-     color: #1b1b2f;
-     font-size: 2em;
-     margin-bottom: 30px;
- }
- /* Liste des voitures en défilement horizontal */
- 
- .car-list {
-     display: flex;
-     gap: 20px;
-     overflow-x: auto;
-     scroll-behavior: smooth;
-     padding-bottom: 20px;
-     margin: 0 20px;
- }
- /* Template de chaque voiture */
- 
- .car-template {
-     background-color: #f3f3f3;
-     border: 1px solid #ddd;
-     border-radius: 10px;
-     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-     width: 250px;
-     min-width: 250px;
-     padding: 20px;
-     text-align: center;
-     transition: transform 0.3s ease;
- }
- 
- .car-template:hover {
-     transform: scale(1.05);
- }
- 
- .car-image {
-     width: 100%;
-     height: auto;
-     border-radius: 10px;
-     margin-bottom: 15px;
- }
- 
- .car-template h3 {
-     color: #1b1b2f;
-     font-size: 1.5em;
-     margin-bottom: 10px;
- }
- 
- .car-template p {
-     color: #666;
-     font-size: 1em;
-     margin: 5px 0;
- }
- /* Styles pour les templates vides */
- 
- .empty-template {
-     background-color: #e0e0e0;
-     border: 1px dashed #ccc;
-     min-width: 250px;
-     height: 300px;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     font-size: 1em;
-     color: #888;
- }
- /* Bouton de réservation */
- 
- .car-template button {
-     background-color: #f9a826;
-     border: none;
-     color: #fff;
-     font-size: 1em;
-     font-weight: bold;
-     padding: 10px 20px;
-     margin-top: 15px;
-     cursor: pointer;
-     border-radius: 5px;
-     transition: background-color 0.3s ease;
- }
- 
- .car-template button:hover {
-     background-color: #1b1b2f;
- }
- /* Boutons de défilement */
- 
- .scroll-btn {
-     position: absolute;
-     top: 50%;
-     transform: translateY(-50%);
-     font-size: 2em;
-     color: #1b1b2f;
-     background: none;
-     border: none;
-     cursor: pointer;
-     z-index: 10;
- }
- 
- .scroll-left {
-     left: 10px;
- }
- 
- .scroll-right {
-     right: 10px;
- }
- 
- .scroll-btn:hover {
-     color: #f9a826;
- }
- /* Style pour la carte flottante VR */
- /* Carte flottante */
- 
- .card-flottante {
-     position: fixed;
-     top: 0;
-     /* Carte positionnée en haut de la page */
-     right: 10px;
-     /* Carte positionnée à droite */
-     background-color: #ffffff;
-     padding: 10px;
-     height: 220px;
-     /* Taille plus ajustée pour la carte */
-     width: 200px;
-     /* Largeur ajustée de la carte */
-     border-radius: 10px;
-     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-     text-align: center;
-     z-index: 1000;
-     /* Assurez-vous qu'elle soit au-dessus des autres éléments */
-     animation: moveCard 2s ease-in-out infinite alternate;
-     /* Animation pour la carte */
-     overflow: hidden;
-     /* Empêche le texte ou les images de déborder */
- }
- 
- .images-container {
-     display: flex;
-     justify-content: space-between;
-     margin-bottom: 10px;
- }
- 
- .card-image {
-     width: 45%;
-     /* Ajuster la taille des images */
-     height: auto;
-     border-radius: 10px;
- }
- 
- .card-flottante h3 {
-     color: #1b1b2f;
-     font-size: 1.2em;
-     /* Taille réduite pour que le texte tienne dans la carte */
-     margin-bottom: 5px;
-     /* Ajustement de l'espace entre l'image et le texte */
-     word-wrap: break-word;
-     /* Permet au texte de s'ajuster dans la largeur */
- }
- 
- .card-flottante p {
-     color: #666;
-     font-size: 0.9em;
-     /* Taille plus petite pour éviter que le texte ne sorte */
-     margin: 0;
-     word-wrap: break-word;
-     /* Permet au texte de s'ajuster dans la largeur */
- }
- /* Animation pour la carte */
- 
- @keyframes moveCard {
-     0% {
-         transform: translateX(0);
-     }
-     100% {
-         transform: translateX(10px);
-     }
- }
+/* === Styles Globaux === */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    color: #333;
+}
+
+
+/* === Barre de Navigation === */
+
+.navbar {
+    background-color: #1b1b2f;
+    padding: 15px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    font-size: 1.2em;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #f9a826;
+}
+
+
+/* === Section d'Introduction === */
+
+.home {
+    padding: 40px;
+    text-align: center;
+    background-color: #f3f3f3;
+}
+
+.home h1 {
+    color: #1b1b2f;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.home h2 {
+    color: #333;
+    font-size: 1.8em;
+    margin-top: 10px;
+}
+
+.home p {
+    font-size: 1.2em;
+    color: #666;
+    line-height: 1.6em;
+}
+
+
+/* === Section des Modèles de Voitures === */
+
+.car-showcase {
+    padding: 40px;
+    background-color: #ffffff;
+    text-align: center;
+    position: relative;
+}
+
+.car-showcase h2 {
+    color: #1b1b2f;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+
+/* Liste des voitures (défilement horizontal) */
+
+.car-list {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 20px;
+    margin: 0 20px;
+}
+
+
+/* Template de Voiture */
+
+.car-template {
+    background-color: #f3f3f3;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    min-width: 250px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.car-template:hover {
+    transform: scale(1.05);
+}
+
+.car-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.car-template h3 {
+    color: #1b1b2f;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.car-template p {
+    color: #666;
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+
+/* Styles pour les Templates Vides */
+
+.empty-template {
+    background-color: #e0e0e0;
+    border: 1px dashed #ccc;
+    min-width: 250px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    color: #888;
+}
+
+
+/* Boutons de Défilement */
+
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em;
+    color: #1b1b2f;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.scroll-left {
+    left: 10px;
+}
+
+.scroll-right {
+    right: 10px;
+}
+
+.scroll-btn:hover {
+    color: #f9a826;
+}
+
+
+/* === Carte Flottante VR === */
+
+.card-flottante {
+    position: fixed;
+    top: 0;
+    right: 10px;
+    background-color: #ffffff;
+    padding: 10px;
+    height: 220px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    z-index: 1000;
+    animation: moveCard 2s ease-in-out infinite alternate;
+    overflow: hidden;
+}
+
+.images-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.card-image {
+    width: 45%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.card-flottante h3 {
+    color: #1b1b2f;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    word-wrap: break-word;
+}
+
+.card-flottante p {
+    color: #666;
+    font-size: 0.9em;
+    margin: 0;
+    word-wrap: break-word;
+}
+
+
+/* Animation pour la Carte */
+
+@keyframes moveCard {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(10px);
+    }
+}
+
+
+/* === Bouton de Réservation === */
+
+.car-template button {
+    background-color: #f9a826;
+    border: none;
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.car-template button:hover {
+    background-color: #1b1b2f;
+}
