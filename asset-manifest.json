@@ -1,24 +1,29 @@
 {
   "files": {
-    "main.css": "/rent-car/static/css/main.b1c87f91.css",
-    "main.js": "/rent-car/static/js/main.23a5757a.js",
+    "main.css": "/rent-car/static/css/main.f04d5ad4.css",
+    "main.js": "/rent-car/static/js/main.bbfde87f.js",
     "static/js/453.48e4400a.chunk.js": "/rent-car/static/js/453.48e4400a.chunk.js",
+    "static/media/camaro.png": "/rent-car/static/media/camaro.434af19ab6adb7649010.png",
+    "static/media/ford.png": "/rent-car/static/media/ford.417c263124ae8344aa7f.png",
     "static/media/fiat500.png": "/rent-car/static/media/fiat500.3a4b106c4924d5582335.png",
+    "static/media/background1.jpg": "/rent-car/static/media/background1.b078fddf56bd19267882.jpg",
     "static/media/picanto.png": "/rent-car/static/media/picanto.ad8bd0f94ccd564410e3.png",
     "static/media/c63_0.png": "/rent-car/static/media/c63_0.93f46963027e1a61b621.png",
+    "static/media/r8.png": "/rent-car/static/media/r8.f67b3634bc17cffc313e.png",
     "static/media/208.png": "/rent-car/static/media/208.a01c9e2ab8a874225ed2.png",
     "static/media/g63.png": "/rent-car/static/media/g63.f70157aff4cd5d539a11.png",
     "static/media/urus.png": "/rent-car/static/media/urus.3096a337dd3428072273.png",
     "static/media/gls.png": "/rent-car/static/media/gls.1f85efaab3ee8f4f75d8.png",
+    "static/media/2008.png": "/rent-car/static/media/2008.0818aa59f93cfd0bc606.png",
     "static/media/audi.png": "/rent-car/static/media/audi.58e72b8ab2e1816de7a6.png",
     "static/media/bmw.png": "/rent-car/static/media/bmw.494c4a80882a3dc67927.png",
     "index.html": "/rent-car/index.html",
-    "main.b1c87f91.css.map": "/rent-car/static/css/main.b1c87f91.css.map",
-    "main.23a5757a.js.map": "/rent-car/static/js/main.23a5757a.js.map",
+    "main.f04d5ad4.css.map": "/rent-car/static/css/main.f04d5ad4.css.map",
+    "main.bbfde87f.js.map": "/rent-car/static/js/main.bbfde87f.js.map",
     "453.48e4400a.chunk.js.map": "/rent-car/static/js/453.48e4400a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b1c87f91.css",
-    "static/js/main.23a5757a.js"
+    "static/css/main.f04d5ad4.css",
+    "static/js/main.bbfde87f.js"
   ]
 }
